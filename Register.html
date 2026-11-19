@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Society - Register</title>
+</head>
+<body>
+
+    <!-- Top Navigation Menu bar matching other pages -->
+    <nav>
+        <a href="index.html">Home</a> | 
+        <a href="events.html">Events</a> | 
+        <a href="register.html">Register</a>
+    </nav>
+    <hr>
+    <h1>Member Registration Form</h1>
+    <form action="register.html" method="post">
+        <!-- Fieldset 1: Personal Details -->
+        <fieldset>
+            <legend>Personal Details</legend>
+            
+            <p>
+                <label for="fullname">Full name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </p>
+
+            <p>
+                <label for="email">Email address:</label><br>
+                <input type="email" id="email" name="email" placeholder="name@example.com" required>
+            </p>
+
+            <p>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" minlength="8" required>
+            </p>
+
+            <p>
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="03001234567">
+            </p>
+
+            <p>
+                <label for="website">Website (optional):</label><br>
+                <input type="url" id="website" name="website" placeholder="https://">
+            </p>
+
+            <p>
+                <label for="semester">Semester:</label><br>
+                <input type="number" id="semester" name="semester" min="1" max="8">
+            </p>
+
+            <p>
+                <label for="dob">Date of birth:</label><br>
+                <input type="date" id="dob" name="dob">
+            </p>
+        </fieldset>
+
+        <br>
+
+        <!-- Fieldset 2: Preferences -->
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <p>
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male" checked>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </p>
+
+            <p>
+                <label for="dept">Department (Hold Ctrl to select multiple):</label><br>
+                <select id="dept" name="dept" multiple>
+                    <option value="cs" selected>Computer Science</option>
+                    <option value="se">Software Engineering</option>
+                    <option value="ee">Electrical Engineering</option>
+                    <option value="it">Information Technology</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Interests:</label><br>
+                <input type="checkbox" id="web" name="interest" value="web">
+                <label for="web">Web</label><br>
+                <input type="checkbox" id="ai" name="interest" value="ai">
+                <label for="ai">AI</label><br>
+                <input type="checkbox" id="networking" name="interest" value="networking">
+                <label for="networking">Networking</label><br>
+                <input type="checkbox" id="gaming" name="interest" value="gaming">
+                <label for="gaming">Gaming</label>
+            </p>
+
+            <p>
+                <label for="favcolor">Favourite colour:</label><br>
+                <input type="color" id="favcolor" name="favcolor" value="#1f3a5f">
+            </p>
+
+            <p>
+                <label for="experience">Experience level (1-10):</label><br>
+                <input type="range" id="experience" name="experience" min="1" max="10" value="5">
+            </p>
+
+            <p>
+                <label for="photo">Profile photo:</label><br>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </p>
+
+            <p>
+                <label for="about">About you:</label><br>
+                <textarea id="about" name="about" rows="4" cols="40" maxlength="200" placeholder="Briefly introduce yourself..."></textarea>
+            </p>
+        </fieldset>
+
+        <br>
+
+        <p>
+            <button type="submit">Register</button>
+            <button type="reset">Clear</button>
+        </p>
+    </form>
+     </body>
+</html>
